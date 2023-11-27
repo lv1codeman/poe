@@ -9,7 +9,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script type="text/javascript">
     function copyToClipboard(id) {
-        navigator.clipboard.writeText($('#' + id).text());
+        navigator.clipboard.writeText($('#' + id).text().trim());
     }
     </script>
 </head>
@@ -25,89 +25,183 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-tw" type="button" role="tab" aria-controls="nav-tw" aria-selected="true">中文版</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-us" type="button" role="tab" aria-controls="nav-us" aria-selected="false">英文版</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-tw" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">物品等級60~74(混沌石配方)</h5>
+                                    <div class="card-body">
+                                        <p id="normal" class="card-text">
+                                            "item level: ([6][0-9]|[7][0-4])"
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('normal')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">物品等級75~99(富豪石配方)</h5>
+                                    <div class="card-body">
+                                        <p id="4link" class="card-text">
+                                            "item level: ([7][5-9]|[8-9][0-9])"
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('4link')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3、4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="3-4link" class="card-text">
+                                            ((r|b|g)-?){3}|((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('3-4link')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3紅</h5>
+                                    <div class="card-body">
+                                        <p id="3Rlink" class="card-text">
+                                            r-r-r
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Rlink')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3綠</h5>
+                                    <div class="card-body">
+                                        <p id="3Glink" class="card-text">
+                                            g-g-g
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Glink')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3藍</h5>
+                                    <div class="card-body">
+                                        <p id="3Blink" class="card-text">
+                                            b-b-b
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Blink')">Copy</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="nav-us" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">物品等級60~74(混沌石配方)</h5>
+                                    <div class="card-body">
+                                        <p id="normal" class="card-text">
+                                            "item level: ([6][0-9]|[7][0-4])"
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('normal')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">物品等級75~99(富豪石配方)</h5>
+                                    <div class="card-body">
+                                        <p id="4link" class="card-text">
+                                            "item level: ([7][5-9]|[8-9][0-9])"
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('4link')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3、4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="3-4link" class="card-text">
+                                            ((r|b|g)-?){3}|((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('3-4link')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3紅</h5>
+                                    <div class="card-body">
+                                        <p id="3Rlink" class="card-text">
+                                            r-r-r
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Rlink')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3綠</h5>
+                                    <div class="card-body">
+                                        <p id="3Glink" class="card-text">
+                                            g-g-g
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Glink')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3藍</h5>
+                                    <div class="card-body">
+                                        <p id="3Blink" class="card-text">
+                                            b-b-b
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Blink')">Copy</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- .row>.col-md-4*3>.card>.card-header+.card-body+.card-footer>button.btn.btn-primary{Copy} -->
-                <div class="row mb-3">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">物品等級60~74(混沌石配方)</h5>
-                            <div class="card-body">
-                                <p id="normal" class="card-text">
-                                    "item level: ([6][0-9]|[7][0-4])"
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('normal')">
-                                    Copy
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">物品等級75~99(富豪石配方)</h5>
-                            <div class="card-body">
-                                <p id="4link" class="card-text">
-                                    "item level: ([7][5-9]|[8-9][0-9])"
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('4link')">
-                                    Copy
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3、4連裝備</h5>
-                            <div class="card-body">
-                                <p id="3-4link" class="card-text">
-                                    ((r|b|g)-?){3}|((r|b|g)-?){4}
-                                </p>
-                            </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('3-4link')">
-                                    Copy
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3紅</h5>
-                            <div class="card-body">
-                                <p id="3Rlink" class="card-text">
-                                    r-r-r
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Rlink')">Copy</button></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3綠</h5>
-                            <div class="card-body">
-                                <p id="3Glink" class="card-text">
-                                    g-g-g
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Glink')">Copy</button></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3藍</h5>
-                            <div class="card-body">
-                                <p id="3Blink" class="card-text">
-                                    b-b-b
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Blink')">Copy</button></div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <div class="col-md-2">
             </div>
