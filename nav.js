@@ -11,7 +11,7 @@ document.write('                <li class=\"nav-item\">\n');
 document.write('                    <a class=\"nav-link\" href=\"stashFilter.html\">倉庫篩選器</a>\n');
 document.write('                </li>\n');
 document.write('                <li class=\"nav-item\">\n');
-document.write('                    <a class=\"nav-link\" href=\"https://www.filterblade.xyz/\">filterblade</a>\n');
+document.write('                    <a class=\"nav-link\" href=\"https://www.filterblade.xyz/\">FilterBlade</a>\n');
 document.write('                </li>\n');
 document.write('                <li class=\"nav-item dropdown\">\n');
 document.write('                    <a class=\"nav-link dropdown-toggle\" id=\"navbarDropdownMenuLink\" data-bs-toggle=\"dropdown\">外部連結</a>\n');

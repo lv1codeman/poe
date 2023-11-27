@@ -26,91 +26,182 @@
             <div class="col-md-2">
             </div>
             <div class="col-md-8">
-                <!-- .row>.col-md-4*3>.card>.card-header+.card-body+.card-footer>button.btn.btn-primary{Copy} -->
-                <div class="row mb-3">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3連裝備</h5>
-                            <div class="card-body">
-                                <p id="3link" class="card-text">
-                                    ((r|b|g)-?){3}
-                                </p>
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-tw-tab" data-bs-toggle="tab" data-bs-target="#nav-tw" type="button" role="tab" aria-controls="nav-tw" aria-selected="true">中文版</button>
+                        <button class="nav-link" id="nav-us-tab" data-bs-toggle="tab" data-bs-target="#nav-us" type="button" role="tab" aria-controls="nav-us" aria-selected="false">英文版</button>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent" style="border: 1px solid #dee2e6; border-top: none;">
+                    <div class="tab-pane fade show active" id="nav-tw" role="tabpanel" aria-labelledby="nav-tw-tab">
+                        <div class="row py-3 px-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="c1" class="card-text">
+                                            ((r|b|g)-?){3}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('c1')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('3link')">
-                                    Copy
-                                </button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="c2" class="card-text">
+                                            ((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('c2')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3、4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="c3" class="card-text">
+                                            ((r|b|g)-?){3}|((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('c3')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-3 px-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3紅</h5>
+                                    <div class="card-body">
+                                        <p id="c4" class="card-text">
+                                            r-r-r
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('c4')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3綠</h5>
+                                    <div class="card-body">
+                                        <p id="c5" class="card-text">
+                                            g-g-g
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('c5')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3藍</h5>
+                                    <div class="card-body">
+                                        <p id="c6" class="card-text">
+                                            b-b-b
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('c6')">Copy</button></div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">4連裝備</h5>
-                            <div class="card-body">
-                                <p id="4link" class="card-text">
-                                    ((r|b|g)-?){4}
-                                </p>
+                    <div class="tab-pane fade" id="nav-us" role="tabpanel" aria-labelledby="nav-us-tab">
+                        <div class="row py-3 px-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="e1" class="card-text">
+                                            ((r|b|g)-?){3}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('e1')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('4link')">
-                                    Copy
-                                </button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="e2" class="card-text">
+                                            ((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('e2')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3、4連裝備</h5>
+                                    <div class="card-body">
+                                        <p id="e3" class="card-text">
+                                            ((r|b|g)-?){3}|((r|b|g)-?){4}
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <button class="btn btn-primary" onclick="copyToClipboard('e3')">
+                                            Copy
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3、4連裝備</h5>
-                            <div class="card-body">
-                                <p id="3-4link" class="card-text">
-                                    ((r|b|g)-?){3}|((r|b|g)-?){4}
-                                </p>
+                        <div class="row pb-3 px-3">
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3紅</h5>
+                                    <div class="card-body">
+                                        <p id="e4" class="card-text">
+                                            r-r-r
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('e4')">Copy</button></div>
+                                </div>
                             </div>
-                            <div class="card-footer">
-                                <button class="btn btn-primary" onclick="copyToClipboard('3-4link')">
-                                    Copy
-                                </button>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3綠</h5>
+                                    <div class="card-body">
+                                        <p id="e5" class="card-text">
+                                            g-g-g
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('e5')">Copy</button></div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card">
+                                    <h5 class="card-header">3藍</h5>
+                                    <div class="card-body">
+                                        <p id="e6" class="card-text">
+                                            b-b-b
+                                        </p>
+                                    </div>
+                                    <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('e6')">Copy</button></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3紅</h5>
-                            <div class="card-body">
-                                <p id="3Rlink" class="card-text">
-                                    r-r-r
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Rlink')">Copy</button></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3藍</h5>
-                            <div class="card-body">
-                                <p id="3Blink" class="card-text">
-                                    b-b-b
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Blink')">Copy</button></div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <h5 class="card-header">3綠</h5>
-                            <div class="card-body">
-                                <p id="3Glink" class="card-text">
-                                    g-g-g
-                                </p>
-                            </div>
-                            <div class="card-footer"><button class="btn btn-primary" onclick="copyToClipboard('3Glink')">Copy</button></div>
-                        </div>
-                    </div>
-                </div>
-                <hr class="hr hr-blurry">
-                待補
             </div>
             <div class="col-md-2">
             </div>
